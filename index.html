@@ -91,14 +91,12 @@
             Based in the UK, I’m a front-end developer passionate about building
             accessible web apps that users love.
           </p>
-          <div class="hero__button">
-            <a href="#" target="_self" class="hero__button-link">CONTACT ME</a>
-          </div>
+
+          <a href="#" target="_self" class="hero__button-link">CONTACT ME</a>
         </section>
 
         <section class="skills">
           <hr class="skills__hr" />
-
           <article class="skills__item">
             <h2 class="skill__item-title">HTML</h2>
             <p class="skills__item_subtitle">4 Years Experience</p>
@@ -106,6 +104,11 @@
 
           <article class="skills__item">
             <h2 class="skill__item-title">CSS</h2>
+            <p class="skills__item_subtitle">4 Years Experience</p>
+          </article>
+
+          <article class="skills__item">
+            <h2 class="skill__item-title">Javascript</h2>
             <p class="skills__item_subtitle">4 Years Experience</p>
           </article>
 
@@ -344,13 +347,14 @@
             <textarea name="usermessage" id="usermessage"> </textarea>
             <div class="input__line-textarea"></div>
 
-            <label for="fsend">SEND MESSAGE</label>
-            <input type="submit" name="fsend" id="fsend" />
+            <label class="send-label" for="fsend">SEND MESSAGE</label>
+            <input type="submit" name="fsend" id="fsend" value="" />
           </form>
         </section>
       </main>
 
       <footer>
+        <div class="footer__line"></div>
         <div class="footer__container">
           <img
             class="footer__logo"
