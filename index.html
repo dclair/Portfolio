@@ -15,6 +15,10 @@
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
@@ -39,26 +43,47 @@
           <ul class="main__nav-ul">
             <li class="main__nav-ul-item">
               <a href="#"
-                ><img src="img/icon_github.svg" alt="Link to Github"
-              /></a>
+                ><i
+                  class="fa-brands fa-github"
+                  aria-label="Github"
+                  title="Github"
+                ></i
+              ></a>
+            </li>
+
+            <li class="main__nav-ul-item">
+              <a href="#" class="icon_shape">
+                <img
+                  src="img/icon_shape.svg"
+                  alt="Link to Shape"
+                  class="img-shape"
+                />
+                <img
+                  src="img/icon_shape_active.svg"
+                  alt="Link to Shape"
+                  class="img-shape-active"
+                />
+              </a>
             </li>
 
             <li class="main__nav-ul-item">
               <a href="#"
-                ><img src="img/icon_shape.svg" alt="Link to Shape"
-              /></a>
+                ><i
+                  class="fa-brands fa-linkedin"
+                  aria-label="Linkedin"
+                  title="Linkedin"
+                ></i
+              ></a>
             </li>
 
             <li class="main__nav-ul-item">
               <a href="#"
-                ><img src="img/icon_link.svg" alt="Link to Linkedink"
-              /></a>
-            </li>
-
-            <li class="main__nav-ul-item">
-              <a href="#"
-                ><img src="img/icon_twitter.svg" alt="Link to Twitter"
-              /></a>
+                ><i
+                  class="fa-brands fa-twitter"
+                  aria-label="Twitter"
+                  title="Twitter"
+                ></i
+              ></a>
             </li>
           </ul>
         </nav>
@@ -335,20 +360,48 @@
             <div class="form__elipse">
               <img src="img/elipse.svg" alt="elipse image" />
             </div>
-            <label for="username">NAME</label>
-            <input type="text" id="username" name="username" />
-            <div class="input__line-username"></div>
 
-            <label for="useremail">EMAIL</label>
-            <input type="email" id="useremail" name="useremail" />
-            <div class="input__line-email"></div>
+            <div class="input__username">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                class="username"
+                required
+              />
+              <label for="username" class="label__username">NAME</label>
+              <div class="input__line-username"></div>
+            </div>
 
-            <label for="usermessage"> MESSAGE</label>
-            <textarea name="usermessage" id="usermessage"> </textarea>
-            <div class="input__line-textarea"></div>
+            <div class="input__useremail">
+              <input
+                type="email"
+                id="useremail"
+                name="useremail"
+                class="useremail"
+                required
+              />
+              <label for="useremail" class="label__useremail">EMAIL</label>
+              <div class="input__line-email"></div>
+            </div>
 
-            <label class="send-label" for="fsend">SEND MESSAGE</label>
-            <input type="submit" name="fsend" id="fsend" value="" />
+            <div class="textarea">
+              <textarea
+                name="usermessage"
+                id="usermessage"
+                class="textarea"
+                required
+                rows="3"
+              ></textarea>
+              <label for="usermessage" class="label__usermessage">
+                MESSAGE</label
+              >
+              <div class="input__line-textarea"></div>
+            </div>
+            <div class="submit__button">
+              <label class="send-label" for="fsend">SEND MESSAGE</label>
+              <input type="submit" name="fsend" id="fsend" value="" />
+            </div>
           </form>
         </section>
       </main>
@@ -366,26 +419,47 @@
             <ul class="footer__nav-ul">
               <li class="footer__nav-ul-item">
                 <a href="#"
-                  ><img src="img/icon_github.svg" alt="Link to Github"
-                /></a>
+                  ><i
+                    class="fa-brands fa-github"
+                    aria-label="Github"
+                    title="Github"
+                  ></i
+                ></a>
+              </li>
+
+              <li class="footer__nav-ul-item">
+                <a href="#" class="icon_shape">
+                  <img
+                    src="img/icon_shape.svg"
+                    alt="Link to Shape"
+                    class="img-shape"
+                  />
+                  <img
+                    src="img/icon_shape_active.svg"
+                    alt="Link to Shape"
+                    class="img-shape-active"
+                  />
+                </a>
               </li>
 
               <li class="footer__nav-ul-item">
                 <a href="#"
-                  ><img src="img/icon_shape.svg" alt="Link to Shape"
-                /></a>
+                  ><i
+                    class="fa-brands fa-linkedin"
+                    aria-label="Linkedin"
+                    title="Linkedin"
+                  ></i
+                ></a>
               </li>
 
               <li class="footer__nav-ul-item">
                 <a href="#"
-                  ><img src="img/icon_link.svg" alt="Link to Linkedink"
-                /></a>
-              </li>
-
-              <li class="footer__nav-ul-item">
-                <a href="#"
-                  ><img src="img/icon_twitter.svg" alt="Link to Twitter"
-                /></a>
+                  ><i
+                    class="fa-brands fa-twitter"
+                    aria-label="Twitter"
+                    title="Twitter"
+                  ></i
+                ></a>
               </li>
             </ul>
           </nav>
